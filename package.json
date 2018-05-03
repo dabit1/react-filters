@@ -1,0 +1,49 @@
+{
+  "name": "@dabit1/react-filters",
+  "version": "1.0.0",
+  "description": "A component to filter arrays",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage --collectCoverageFrom=components/**/*.js",
+    "build": "babel src -d dist --ignore '**/*.test.js'"
+  },
+  "author": "David Escalera",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "lodash.isequalwith": "^4.4.0",
+    "lodash.uniq": "^4.5.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.2.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.2.1",
+    "standard": "^10.0.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/config/shim.js",
+      "<rootDir>/config/setupTest.js"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
